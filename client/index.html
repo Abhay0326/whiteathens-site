@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta
+      name="description"
+      content="White Athens Software - Enterprise AI Consulting, Autonomous Multi-Agent Swarms, Hybrid RAG, and Sovereign AI Governance led by Director & Chief AI Architect Sachin Jain."
+    />
+    <title>White Athens Software | Enterprise AI & Agentic Systems</title>
+    <!-- Prevent Flash of Unstyled Content (FOUC) by checking theme before render -->
+    <script>
+      (function () {
+        try {
+          const savedTheme = localStorage.getItem('wa_theme_preference');
+          if (savedTheme === 'dark') {
+            document.documentElement.classList.add('dark');
+            document.documentElement.style.colorScheme = 'dark';
+          } else if (savedTheme === 'light') {
+            document.documentElement.classList.remove('dark');
+            document.documentElement.style.colorScheme = 'light';
+          } else {
+            // Default to system preference
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+              document.documentElement.classList.add('dark');
+              document.documentElement.style.colorScheme = 'dark';
+            } else {
+              document.documentElement.classList.remove('dark');
+              document.documentElement.style.colorScheme = 'light';
+            }
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="antialiased min-h-screen">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
