@@ -1,0 +1,23 @@
+services:
+  site-client:
+    build: ./client
+    container_name: react-site
+    ports:
+      - "5173:3000"
+    networks:
+      - whiteathens-site
+    depends_on:
+      - express-server
+    restart: unless-stopped
+  express-server:
+    build: ./server
+    container_name: express-server
+    ports:
+      - "8858:8858"
+    networks:
+      - whiteathens-site
+    restart: unless-stopped
+
+networks:
+  whiteathens-site:
+    driver: bridge
