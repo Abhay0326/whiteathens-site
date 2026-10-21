@@ -2,6 +2,8 @@ import React from 'react';
 
 export const NeonBadge = ({ children, variant = 'blue', size = 'normal', className = '' }) => {
   const styles = {
+    red:
+      'bg-red-500/20 text-red-500/60 border-red-500/40 shadow-[0_0_12px_rgba(250,21,200,0.25)]',
     yellow:
       'bg-yellow-500/10 text-yellow-600 dark:text-yellow-300 border-yellow-500/40 dark:border-yellow-400/60 shadow-[0_0_12px_rgba(250,204,21,0.25)]',
     blue:
@@ -32,6 +34,8 @@ export const NeonBadge = ({ children, variant = 'blue', size = 'normal', classNa
             ? 'bg-purple-400'
             : variant === 'gray'
             ? 'bg-slate-400'
+            : variant === 'red'
+            ? 'bg-red-500/70'
             : 'bg-blue-400'
         }`}
       />

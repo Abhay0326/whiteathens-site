@@ -14,10 +14,10 @@ const TICKER_ITEMS = [
 
 export const MarqueeTicker = () => {
   return (
-    <div className="relative w-full overflow-hidden py-3 bg-gradient-to-r from-blue-950 via-slate-900 to-blue-950 border-y border-blue-900/50 shadow-inner">
+    <div className="relative w-full overflow-hidden py-3 bg-gradient-to-r from-blue-300 via-gray-600 to-blue-300 border-y border-slate-200 shadow-xl rounded-t-2xl">
       {/* Side gradient fade masks */}
-      <div className="absolute left-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-r from-slate-950 to-transparent z-10 pointer-events-none" />
-      <div className="absolute right-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-l from-slate-950 to-transparent z-10 pointer-events-none" />
+      <div className="absolute left-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-r from-slate-600 to-transparent z-10 pointer-events-none" />
+      <div className="absolute right-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-l from-slate-600 to-transparent z-10 pointer-events-none" />
 
       {/* Marquee Track */}
       <div className="animate-marquee flex items-center gap-8">
@@ -29,7 +29,7 @@ export const MarqueeTicker = () => {
               className={`flex items-center gap-2.5 px-4 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap border transition-all duration-200 ${
                 item.highlight
                   ? 'border-yellow-400/40 bg-yellow-400/10 text-yellow-300 shadow-[0_0_12px_rgba(250,204,21,0.2)]'
-                  : 'border-blue-700/40 bg-blue-900/30 text-blue-200'
+                  : 'border-blue-700/40 bg-blue-900/30 text-black/70'
               }`}
             >
               <Icon

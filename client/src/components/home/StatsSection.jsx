@@ -38,7 +38,7 @@ export const StatsSection = () => {
   ];
 
   return (
-    <section className="py-12 bg-slate-100/80 dark:bg-slate-900/60 border-y border-slate-200 dark:border-blue-900/50 transition-colors duration-300">
+    <section className="py-12 bg-slate-400/80 border-y border-slate-200 shadow-xl rounded-b-2xl transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {stats.map((stat, idx) => {
@@ -49,10 +49,10 @@ export const StatsSection = () => {
             return (
               <div
                 key={idx}
-                className="p-6 rounded-2xl bg-white dark:bg-slate-950 border border-slate-200 dark:border-blue-900/40 shadow-sm hover:shadow-md hover:border-yellow-400/50 dark:hover:border-yellow-400/50 transition-all duration-300 group"
+                className="p-6 rounded-2xl bg-white/40 border-slate-200 shadow-sm hover:shadow-md hover:border-yellow-400/50 transition-all duration-300 group"
               >
                 <div className="flex items-center justify-between mb-3">
-                  <span className="text-xs font-mono font-bold tracking-wider text-slate-500 dark:text-slate-400 uppercase">
+                  <span className="text-xs font-mono font-bold tracking-wider text-slate-500 uppercase">
                     METRIC 0{idx + 1}
                   </span>
                   <div
@@ -72,24 +72,24 @@ export const StatsSection = () => {
                   <span
                     className={`text-4xl font-black tracking-tight ${
                       isYellow
-                        ? 'text-yellow-500 dark:text-yellow-400'
+                        ? 'text-yellow-500 '
                         : isPurple
-                        ? 'text-purple-600 dark:text-purple-400'
-                        : 'text-blue-600 dark:text-blue-400'
+                        ? 'text-purple-600 '
+                        : 'text-blue-600 '
                     }`}
                   >
                     {stat.value}
                   </span>
-                  <span className="text-2xl font-bold text-slate-500 dark:text-slate-400">
+                  <span className="text-2xl font-bold text-slate-500 ">
                     {stat.suffix}
                   </span>
                 </div>
 
-                <div className="text-sm font-bold text-slate-900 dark:text-white mb-1">
+                <div className="text-sm font-bold text-slate-900 mb-1">
                   {stat.label}
                 </div>
 
-                <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                <p className="text-xs text-slate-600 leading-relaxed">
                   {stat.detail}
                 </p>
               </div>

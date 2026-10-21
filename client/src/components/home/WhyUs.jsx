@@ -35,10 +35,10 @@ export const WhyUs = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <NeonBadge variant="blue">The White Athens Advantage</NeonBadge>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 dark:text-gray-400 tracking-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight">
             Why Enterprise Leaders Choose <span className="neon-text-yellow">White Athens</span>.
           </h2>
-          <p className="text-base sm:text-lg text-slate-600 dark:text-slate-500">
+          <p className="text-base sm:text-lg text-slate-600 ">
             Bridging the gap between bleeding-edge research and mission-critical enterprise production.
           </p>
         </div>
@@ -53,26 +53,26 @@ export const WhyUs = () => {
             return (
               <div
                 key={idx}
-                className="p-8 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-blue-900/40 shadow-md hover:shadow-xl hover:border-yellow-400/60 dark:hover:border-yellow-400/60 transition-all duration-300 relative group"
+                className="p-8 rounded-2xl bg-slate-400/20 border border-slate-200 shadow-md hover:shadow-xl hover:border-yellow-400/60 transition-all duration-300 relative group"
               >
                 <div className="flex items-start gap-4">
                   <div
-                    className={`w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 border shadow-sm transition-transform duration-300 group-hover:scale-110 ${
+                    className={`w-12 h-12 rounded-xl flex items-center justify-center shrink-0 border shadow-sm transition-transform duration-300 group-hover:scale-110 ${
                       isYellow
-                        ? 'bg-yellow-400/15 border-yellow-400/40 text-yellow-600 dark:text-yellow-400'
+                        ? 'bg-yellow-400/15 border-yellow-400/40 text-yellow-600 '
                         : isPurple
-                        ? 'bg-purple-500/15 border-purple-400/40 text-purple-600 dark:text-purple-400'
-                        : 'bg-blue-600/15 border-blue-400/40 text-blue-600 dark:text-blue-400'
+                        ? 'bg-purple-500/15 border-purple-400/40 text-purple-600 '
+                        : 'bg-blue-600/15 border-blue-400/40 text-blue-600 '
                     }`}
                   >
                     <Icon className="w-6 h-6" />
                   </div>
 
                   <div className="space-y-2">
-                    <h3 className="text-xl font-bold text-slate-900 dark:text-white tracking-tight group-hover:text-yellow-500 dark:group-hover:text-yellow-300 transition-colors">
+                    <h3 className="text-xl font-bold text-slate-900 group-hover:text-yellow-500 transition-colors">
                       {pillar.title}
                     </h3>
-                    <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                    <p className="text-sm text-slate-600 leading-relaxed">
                       {pillar.desc}
                     </p>
                   </div>
