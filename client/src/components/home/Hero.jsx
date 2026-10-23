@@ -18,9 +18,9 @@ export const Hero = () => {
   return (
     <section className="relative overflow-hidden pt-12 pb-20 md:pt-20 md:pb-28 transition-colors duration-300">
       {/* Background ambient glowing gradient orbs */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-blue-600/15 dark:bg-blue-600/20 blur-[130px] rounded-full pointer-events-none" />
-      <div className="absolute top-1/3 right-10 w-[350px] h-[300px] bg-yellow-400/10 dark:bg-yellow-400/15 blur-[120px] rounded-full pointer-events-none" />
-      <div className="absolute top-1/2 left-10 w-[300px] h-[300px] bg-purple-600/10 dark:bg-purple-600/15 blur-[110px] rounded-full pointer-events-none" />
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-blue-600/15 blur-[130px] rounded-full pointer-events-none" />
+      <div className="absolute top-1/3 right-10 w-[350px] h-[300px] bg-yellow-400/10  blur-[120px] rounded-full pointer-events-none" />
+      <div className="absolute top-1/2 left-10 w-[300px] h-[300px] bg-purple-600/10  blur-[110px] rounded-full pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 items-center">
@@ -32,22 +32,22 @@ export const Hero = () => {
               </NeonBadge>
             </div>
 
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-slate-900 dark:text-gray-400 leading-[1.12]">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-slate-900 leading-[1.12]">
               Architecting{' '}
-              <span className="text-blue-600 dark:text-blue-400">Enterprise Autonomy</span> with{' '}
+              <span className="text-blue-600 ">Enterprise Autonomy</span> with{' '}
               <span className="neon-text-yellow inline-block font-extrabold">
                 Agentic AI Swarms
               </span>{' '}
               & Sovereign Governance.
             </h1>
 
-            <p className="text-lg sm:text-xl text-slate-700 dark:text-slate-500 max-w-2xl font-normal leading-relaxed">
+            <p className="text-lg sm:text-xl text-slate-700 max-w-2xl font-normal leading-relaxed">
               White Athens Software empowers global organizations to move beyond basic chatbots. We architect high-performance{' '}
-              <span className="font-semibold text-yellow-600 dark:text-yellow-400">
+              <span className="font-semibold text-yellow-600">
                 multi-agent workforces
               </span>
               , hybrid RAG knowledge engines, and ironclad{' '}
-              <span className="font-semibold text-blue-600 dark:text-blue-400">
+              <span className="font-semibold text-blue-600">
                 compliance guardrails
               </span>{' '}
               engineered for scale.
@@ -56,17 +56,17 @@ export const Hero = () => {
             {/* CTAs */}
 
             {/* Micro badges below CTA */}
-            <div className="pt-4 flex flex-wrap items-center justify-center lg:justify-start gap-y-2 gap-x-6 text-m text-slate-600 dark:text-gray-500 font-medium">
+            <div className="pt-4 flex flex-wrap items-center justify-center lg:justify-start gap-y-2 gap-x-6 text-m text-slate-600 font-medium">
               <span className="flex items-center gap-1.5">
-                <CheckCircle2 className="w-4 h-4 text-yellow-500 dark:text-yellow-400" />
+                <CheckCircle2 className="w-4 h-4 text-yellow-500" />
                 Zero Hallucination Tolerance
               </span>
               <span className="flex items-center gap-1.5">
-                <ShieldCheck className="w-4 h-4 text-blue-500 dark:text-blue-400" />
+                <ShieldCheck className="w-4 h-4 text-blue-500" />
                 EU AI Act & NIST RMF Compliant
               </span>
               <span className="flex items-center gap-1.5">
-                <Cpu className="w-4 h-4 text-purple-500 dark:text-purple-400" />
+                <Cpu className="w-4 h-4 text-purple-500" />
                 Multi-Cloud Sovereign IaC
               </span>
             </div>

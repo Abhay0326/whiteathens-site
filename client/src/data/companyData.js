@@ -85,10 +85,10 @@ With a proven track record delivering mission-critical AI-powered solutions acro
     'The true enterprise AI revolution is not about asking questions to a chatbot—it is about orchestrating autonomous multi-agent workforces that reason under strict enterprise guardrails to deliver real business outcomes.',
   contact: {
     phone: '(+91) 98118 60631',
-    email: 'SachinJain@WhiteAthens.com',
+    email: 'sachinjain@WhiteAthens.com',
     location: 'Delhi NCR, India',
     linkedin: 'https://www.linkedin.com/in/sachinsamhita/',
-    website: 'www.WhiteAthens.com',
+    website: 'www.whiteathens.com',
   },
   visitingCardBadges: ['AI STRATEGY', 'AGENTIC AI', 'AI GOVERNANCE', 'CLOUD & DEVSECOPS'],
 };

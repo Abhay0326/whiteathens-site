@@ -12,19 +12,19 @@ export const About = () => {
   return (
     <div className="py-12 md:py-20 relative overflow-hidden transition-colors duration-300">
       {/* Background ambient lighting */}
-      <div className="absolute top-20 right-10 w-96 h-96 bg-yellow-400/10 dark:bg-yellow-400/15 blur-[140px] rounded-full pointer-events-none" />
-      <div className="absolute top-1/3 left-10 w-96 h-96 bg-blue-600/15 dark:bg-blue-600/20 blur-[150px] rounded-full pointer-events-none" />
+      <div className="absolute top-20 right-10 w-96 h-96 bg-yellow-400/10 blur-[140px] rounded-full pointer-events-none" />
+      <div className="absolute top-1/3 left-10 w-96 h-96 bg-blue-600/15 blur-[150px] rounded-full pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-20">
         {/* Page Hero Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <NeonBadge variant="yellow">Organization & Leadership</NeonBadge>
 
-          <h1 className="text-4xl sm:text-5xl font-black text-slate-900 dark:text-gray-400 tracking-tight">
+          <h1 className="text-4xl sm:text-5xl font-black text-slate-900 tracking-tight">
             About <span className="neon-text-yellow">White Athens Software</span> & Our Leadership.
           </h1>
 
-          <p className="text-base sm:text-lg text-slate-600 dark:text-slate-500 leading-relaxed">
+          <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
             Founded in 2025, White Athens Software is an AI-first organization dedicated to bridging foundational model research with bulletproof, regulated enterprise workflows.
           </p>
         </div>
@@ -32,13 +32,13 @@ export const About = () => {
         {/* SECTION 1: Interactive 3D Digital Visiting Card Showcase */}
         <section className="space-y-6">
           <div className="text-center max-w-xl mx-auto space-y-2">
-            <span className="text-m font-mono font-bold tracking-widest text-blue-600 dark:text-blue-400 uppercase">
+            <span className="text-m font-mono font-bold tracking-widest text-blue-600 uppercase">
               Digital Identity & Credentials
             </span>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-gray-400">
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900">
               Official Executive Visiting Card
             </h2>
-            <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-500">
+            <p className="text-xs sm:text-sm text-slate-600 ">
               Flip to explore front & back card specs, copy credentials, or download the direct contact vCard file.
             </p>
           </div>
@@ -57,11 +57,11 @@ export const About = () => {
         </section>
 
         {/* SECTION 4: Direct Action Banner */}
-        <section className="p-8 sm:p-12 rounded-3xl bg-gradient-to-r from-blue-900/60 via-slate-900 to-blue-950 border border-blue-700/50 shadow-2xl text-center space-y-4 text-white">
+        <section className="p-8 sm:p-12 rounded-3xl bg-gradient-to-r from-blue-200/60 via-slate-200 to-blue-200 border border-blue-700/50 shadow-2xl text-center space-y-4 text-slate-700">
           <h3 className="text-2xl sm:text-3xl font-black">
             Ready to Collaborate with <span className="neon-text-yellow">White Athens</span>?
           </h3>
-          <p className="text-sm text-slate-300 max-w-xl mx-auto">
+          <p className="text-sm text-slate-700 max-w-xl mx-auto">
             Schedule an initial technical deep-dive with Sachin Jain and our senior solutions architects to assess your enterprise AI roadmap.
           </p>
           <div className="pt-2">

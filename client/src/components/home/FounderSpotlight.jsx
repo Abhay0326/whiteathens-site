@@ -4,6 +4,7 @@ import { User, ArrowRight, Mail, Phone, MapPin, ShieldCheck, Quote } from 'lucid
 import { LinkedInIcon } from '../common/Icons';
 import { FOUNDER_INFO } from '../../data/companyData';
 import { NeonBadge } from '../common/NeonBadge';
+import founderImage from '../../assets/sachinjainProfilePic.png'
 
 export const FounderSpotlight = () => {
   return (
@@ -37,9 +38,9 @@ export const FounderSpotlight = () => {
             {/* Image Placeholder Column */}
             <div className="lg:col-span-5 flex flex-col items-center">
               <div className="relative group w-full max-w-[320px] aspect-[4/5] rounded-2xl overflow-hidden border-2 border-yellow-400/60 bg-gradient-to-b from-gray-100 via-slate-300 to-gray-100 shadow-[0_0_30px_rgba(250,204,21,0.25)] flex flex-col items-center justify-center p-6 text-center transition-all duration-300 group-hover:shadow-[0_0_40px_rgba(250,204,21,0.4)]">
-                {/* Folunder Image Placeholder Rounded*/}
+                {/* Founder Image Placeholder Rounded*/}
                 <div className="w-28 h-28 rounded-full bg-blue-950/80 border-yellow-400/60 flex items-center justify-center mb-4 text-yellow-400 shadow-inner group-hover:scale-105 transition-transform duration-300">
-                  <img className='w-28 h-28 rounded-full border-2 justify-center' src='src/assets/sachinjainProfilePic.png'/>
+                  <img className='w-28 h-28 rounded-full border-2 justify-center' src={founderImage} alt='founderImage'/>
                 </div>
 
                 <div className="space-y-1.5 z-10">
