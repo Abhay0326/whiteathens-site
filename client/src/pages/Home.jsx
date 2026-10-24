@@ -6,6 +6,7 @@ import { BentoGrid } from '../components/home/BentoGrid';
 import { WhyUs } from '../components/home/WhyUs';
 import { FounderSpotlight } from '../components/home/FounderSpotlight';
 import { ConsultationModal } from '../components/common/ConsultationModal';
+import ScrollReveal from '../components/common/ScrollReveal';
 
 export const Home = () => {
   const [consultModalOpen, setConsultModalOpen] = useState(false);
@@ -18,30 +19,39 @@ export const Home = () => {
 
   return (
     <div className="min-h-screen">
-      {/* 1. Hero Section */}
-      <Hero />
+      <ScrollReveal>
+        {/* 1. Hero Section */}
+        <Hero />
+      </ScrollReveal>
 
-      {/* 2. Moving Horizontal AI Capabilities Marquee Ticker */}
-      <MarqueeTicker />
+      <ScrollReveal>
+        {/* 3. Enterprise Stats */}
+        <StatsSection />
+      </ScrollReveal>
 
-      {/* 3. Enterprise Stats */}
-      <StatsSection />
+      <ScrollReveal>
+        {/* 4. Flagship Bento Grid Showcase */}
+        <BentoGrid onConsultService={handleConsultService} />
+      </ScrollReveal>
 
-      {/* 4. Flagship Bento Grid Showcase */}
-      <BentoGrid onConsultService={handleConsultService} />
+      <ScrollReveal>
+        {/* 5. Enterprise Differentiators */}
+        <WhyUs />
+      </ScrollReveal>
 
-      {/* 5. Enterprise Differentiators */}
-      <WhyUs />
+      <ScrollReveal>
+        {/* 6. Founder Showcase in the Second Half of the Main Page */}
+        <FounderSpotlight />
+      </ScrollReveal>
 
-      {/* 6. Founder Showcase in the Second Half of the Main Page */}
-      <FounderSpotlight />
-
-      {/* Global Consultation Modal */}
-      <ConsultationModal
-        isOpen={consultModalOpen}
-        onClose={() => setConsultModalOpen(false)}
-        preselectedService={selectedService}
-      />
+      <ScrollReveal>
+        {/* Global Consultation Modal */}
+        <ConsultationModal
+          isOpen={consultModalOpen}
+          onClose={() => setConsultModalOpen(false)}
+          preselectedService={selectedService}
+        />
+      </ScrollReveal>  
     </div>
   );
 };

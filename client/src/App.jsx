@@ -11,7 +11,7 @@ function App() {
   return (
       <Router>
         <ScrollToTop />
-        <div className="min-h-screen flex flex-col bg-[var(--bg-primary)] text-[var(--text-primary)] transition-colors duration-300">
+        <div className="min-h-screen flex flex-col bg-(--bg-primary) text-(--text-primary) transition-colors duration-300">
           <Navbar />
           <main className="flex-grow">
             <Routes>
